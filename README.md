@@ -10,5 +10,5 @@ ssh-keygen -R raspberrypi.local
 ssh pi@raspberrypi.local
 ```
 4. Change the default password using the `passwd` command
-5. Set the WiFi country in raspi-config's Localisation Options: `sudo raspi-config`
+5. Set the WiFi country in raspi-config's Localisation Options: `sudo raspi-config`. Reboot is not necessary.
 6. Run the script `curl -sL https://raw.githubusercontent.com/mmalmi/FreedomPi/master/install.sh | bash`
