@@ -21,6 +21,7 @@ WantedBy=multi-user.target" > /lib/systemd/system/fm_radio.service
 
 cp /home/pi/src/fm_transmitter/acoustic_guitar_duet.wav /home/pi/FreedomPi/radio/audio/
 systemctl enable fm_radio
+systemctl start fm_radio
 
 # cd /home/pi/src
 # git clone https://github.com/F5OEO/rpitx
