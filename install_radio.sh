@@ -1,6 +1,6 @@
 mkdir /home/pi/src
 cd /home/pi/src
-git clone https://github.com/markondej/fm_transmitter
+git clone https://github.com/markondej/fm_transmitter.git --depth 1
 
 apt install sox libsox-fmt-mp3 -y
 # on rpi4: https://github.com/markondej/fm_transmitter#raspberry-pi-4
