@@ -65,9 +65,6 @@ echo "Configuring Hostapd !"
 echo "Choose the hostname for your new network (1-32 char, try to privilege ASCII chars) :"
 read ssid
 
-echo "Choose the password for your new network (minimum 8 char):"
-read passphrase
-
 echo "interface=wlan0
 driver=nl80211
 ssid=$ssid
@@ -77,11 +74,7 @@ wmm_enabled=0
 macaddr_acl=0
 auth_algs=1
 ignore_broadcast_ssid=0
-wpa=2
-wpa_passphrase=$passphrase
-wpa_key_mgmt=WPA-PSK
-wpa_pairwise=TKIP
-rsn_pairwise=CCMP
+wpa=0
 " > /etc/hostapd/hostapd.conf
 
 echo 'DAEMON_CONF="/etc/hostapd/hostapd.conf"' >> /etc/default/hostapd
