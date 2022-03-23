@@ -1,3 +1,4 @@
+![WIP](wip.gif "work in progress")
 # FreedomPi
 * Raspberry Pi wifi hotspot
 * Optionally shares internet access over Tor. Tor prevents internet censorship and protects open wifi providers from liability.
