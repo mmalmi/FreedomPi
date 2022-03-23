@@ -1,5 +1,8 @@
 # FreedomPi
-Raspberry Pi wifi hotspot with an offline-first community portal. Optionally shares internet access over Tor.
+* Raspberry Pi wifi hotspot
+* Optionally shares internet access over Tor. Tor prevents internet censorship and protects open wifi providers from liability.
+* Offline-first community portal
+  * Chat that synchronizes over the sneaker network, when people move between FreedomPi hotspots
 
 ## Install
 ### Using existing image
