@@ -26,7 +26,6 @@ echo "$(tput setaf 6)This script will configure your Raspberry Pi as a wireless 
 read -p "$(tput bold ; tput setaf 2)Press [Enter] to begin, [Ctrl-C] to abort...$(tput sgr0)"
 
 echo "$(tput setaf 6)Updating packages...$(tput sgr0)"
-apt-get update -y
 
 echo "Installing dnsmasq"
 apt install dnsmasq iptables -y
@@ -111,7 +110,7 @@ sh -c "iptables-save > /etc/iptables.ipv4.nat"
 echo "Add auto start on startup the Raspberry Pi."
 sed -i '/exit 0/ i iptables-restore < /etc/iptables.ipv4.nat' /etc/rc.local
 
-echo "$(tput setaf 6)Rebooting...$(tput sgr0)"
-reboot
+# echo "$(tput setaf 6)Rebooting...$(tput sgr0)"
+# reboot
 
 exit 0
