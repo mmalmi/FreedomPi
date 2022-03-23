@@ -12,7 +12,7 @@
 
 ## Install
 ### Using a pre-built image
-1. Download an existing Freedom Pi image from releases (upcoming)
+1. Download a pre-built Freedom Pi image from [releases](https://github.com/mmalmi/FreedomPi/releases) (upcoming)
 2. Download [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 3. In Raspberry Pi Imager: Choose OS -> Use custom -> Select the downloaded image.
 4. Optional: if you want to manage the Pi over SSH, add an empty file named "ssh" onto the root of the SD card. Remember to change the default password as soon as possible.
