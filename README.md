@@ -19,6 +19,6 @@ ssh pi@raspberrypi.local
 ```
 wget https://raw.githubusercontent.com/mmalmi/FreedomPi/master/install.sh -O install.sh
 chmod +x ./install.sh
-sudo ./install.sh
+./install.sh
 ```.
 

@@ -2,7 +2,7 @@
 mkdir /home/pi/src
 cd /home/pi/src
 apt install git libmicrohttpd-dev -y
-git clone https://github.com/nodogsplash/nodogsplash
+git clone https://github.com/nodogsplash/nodogsplash.git
 cd /home/pi/src/nodogsplash
 make
 make install
