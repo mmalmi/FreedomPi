@@ -13,13 +13,13 @@ After=network.target
 
 [Service]
 Type=forking
-ExecStart=/home/pi/FreedomPi/radio/radio_play.sh
+ExecStart=/home/pi/FreedomPi/radio/fm_transmitter_play.sh
 Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target" > /lib/systemd/system/fm_radio.service
 
-cp /home/pi/src/fm_transmitter/acoustic_guitar_duet.wav /home/pi/radio/audio/
+cp /home/pi/src/fm_transmitter/acoustic_guitar_duet.wav /home/pi/FreedomPi/radio/audio/
 systemctl enable fm_radio
 
 # cd /home/pi/src
