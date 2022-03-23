@@ -1,12 +1,13 @@
 ![WIP](wip.gif "work in progress")
 # FreedomPi
-* Raspberry Pi wifi hotspot
+* Raspberry Pi wifi access point
 * Optionally shares internet access over Tor. Tor prevents internet censorship and protects open wifi providers from liability.
 * Offline-first community portal that opens when you connect to the wifi
-  * Chat that synchronizes over the sneaker network, when people move between FreedomPi hotspots
+  * Chat that synchronizes over the sneaker network when people move between FreedomPi hotspots
   * Filesharing tools
 * Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter), web UI)
-  * No additional hardware required, uses Raspberry Pi's 
+  * No additional hardware required: uses Raspberry Pi's spread spectrum clock signal generator to emit radio frequencies
+  * Check your local regulations regarding transmission power and allowed frequencies. Low-power transmission (phone-to-car-radio transmitters) is usually allowed. For more power, you can add a wire antenna to the GPIO 4 port.
 
 ## Install
 ### Using existing image
