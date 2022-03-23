@@ -4,7 +4,13 @@
 cd ~
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install git -y
+sudo apt install git unattended-upgrades -y # automatic software update
+sudo dpkg-reconfigure --priority=medium unattended-upgrades
+
+sudo sh -c 'echo "LC_CTYPE=en_GB.UTF-8
+LC_MESSAGES=en_GB.UTF-8
+LC_ALL=en_GB.UTF-8" >> /etc/default/locale' # fixes annoying locale warnings
+
 git clone https://github.com/mmalmi/FreedomPi.git
 cd FreedomPi
 sudo ./install_nginx.sh
