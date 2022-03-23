@@ -1,12 +1,22 @@
+<iframe src="https://giphy.com/embed/dWa2rUaiahx1FB3jor" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
 # FreedomPi
 * Raspberry Pi wifi hotspot
 * Optionally shares internet access over Tor. Tor prevents internet censorship and protects open wifi providers from liability.
-* Offline-first community portal
+* Offline-first community portal that opens when you connect to the wifi
   * Chat that synchronizes over the sneaker network, when people move between FreedomPi hotspots
+  * Filesharing tools
+* Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter), web UI)
+  * No additional hardware required, uses Raspberry Pi's 
 
 ## Install
 ### Using existing image
-Download an existing FreedomPi image from releases (upcoming) and write it onto an SD card.
+1. Download an existing FreedomPi image from releases (upcoming)
+2. Download [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+3. In Raspberry Pi Imager: Choose OS -> Use custom -> Select the downloaded image.
+4. Optional: if you want to manage the Pi over SSH, add an empty file named "ssh" onto the root of the SD card. Remember to change the default password as soon as possible.
+5. Insert the SD card into a Pi and power it on.
+6. An open wifi network named FreedomPi should appear soon.
 
 ### Manual installation
 1. Install Raspberry Pi Os Lite onto a microSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
