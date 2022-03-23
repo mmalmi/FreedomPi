@@ -11,7 +11,7 @@
 * $30 minimal setup: Raspberry Pi Zero W, SD card and a power supply
 
 ## Install
-### Using existing image
+### Using a pre-built image
 1. Download an existing Freedom Pi image from releases (upcoming)
 2. Download [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 3. In Raspberry Pi Imager: Choose OS -> Use custom -> Select the downloaded image.
