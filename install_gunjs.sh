@@ -18,7 +18,8 @@ Description=Gun.js relay
 After=network.target
 
 [Service]
-Type=forking
+Type=simple
+WorkingDirectory=/home/pi/src/gun-js
 ExecStart=$node_path /home/pi/src/gun-js/examples/http.js
 Restart=on-failure
 User=www-data

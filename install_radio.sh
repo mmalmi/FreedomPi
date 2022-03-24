@@ -12,7 +12,7 @@ Description=FM radio broadcast
 After=network.target
 
 [Service]
-Type=forking
+Type=simple
 ExecStart=/home/pi/FreedomPi/radio/fm_transmitter_play.sh
 Restart=on-failure
 
