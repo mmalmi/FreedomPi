@@ -20,8 +20,16 @@ body {
 	<li><a href="/files">File listing</a></li>
 </ul>
 
-<iframe src="http://slavaukraini.local:8765/chat/index.html" title="Chat" style="margin-top:4em;width:100%;height:600px"></iframe>
+<div id="iframe"></div>
 
 </div>
+
+<script>
+var iframe = document.createElement('iframe');
+iframe.src = 'http://' + location.host + ':8765/chat/index.html';
+iframe.style = 'margin-top:4em;width:100%;height:600px';
+document.getElementById('iframe').append(iframe);
+</script>
+
 </body>
 </html>
