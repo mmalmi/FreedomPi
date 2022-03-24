@@ -6,11 +6,11 @@ node_path=$(which node)
 mkdir /home/pi/src
 cd /home/pi/src
 git clone https://github.com/amark/gun.git gun-js --depth 1
-chown -R pi:www-data gun-js
+sudo chown -R pi:www-data gun-js
 cd gun-js
 npm install
 
-sudo -c "echo \"[Unit]
+sudo su -c "echo \"[Unit]
 Description=Gun.js relay
 After=network.target
 
