@@ -9,8 +9,7 @@ cd /home/pi/src
 git clone https://github.com/mmalmi/gun-rs.git --depth 1
 sudo chown -R pi:www-data gun-rs
 cd gun-rs
-cargo build --release # this takes a very long time on slower devices like RPi Zero W
-# pre-built images needed
+cargo build --release # this takes many hours on slower devices like RPi Zero W - pre-built images needed
 
 sudo su -c "echo \"[Unit]
 Description=Gun-rs relay
