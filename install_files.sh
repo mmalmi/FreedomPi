@@ -4,9 +4,8 @@
 # Kiwix
 sudo apt install kiwix-tools
 mkdir /home/pi/FreedomPi/public/files/kiwix
-cd /home/pi/FreedomPo/public/files/kiwix
+cd /home/pi/FreedomPi/public/files/kiwix
 wget https://download.kiwix.org/zim/wikipedia/wikipedia_en_top_mini_2022-01.zim
-wget https://download.kiwix.org/zim/wikipedia/wikipedia_en_top_mini_2022-02.zim
 kiwix-manage library.xml add *.zim
 
 sudo sh -c "echo \"[Unit]

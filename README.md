@@ -4,6 +4,7 @@
 * Offline-first community portal that opens when you connect to the wifi
   * Chat that synchronizes over the sneaker network when people move between Freedom Pi hotspots
   * Filesharing tools
+  * Offline databank. English mini version of Wikipedia is included by default. 
 * Optionally shares internet access over Tor. Tor prevents internet censorship and protects open wifi providers from liability.
 * Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter), web UI TBD)
   * No additional hardware required: it uses Raspberry Pi's spread spectrum clock signal generator to emit radio frequencies
@@ -40,3 +41,9 @@ chmod +x ./install.sh
 ./install.sh
 ```
 
+## Adding datasets to library
+1. Download .zim files from `https://download.kiwix.org/zim/` or other sources into `/home/pi/FreedomPi/public/files/kiwix`
+2. Run
+```cd /home/pi/FreedomPi/public/files/kiwix
+kiwix-manage library.xml add *.zim`
+sudo service kiwix restart```
