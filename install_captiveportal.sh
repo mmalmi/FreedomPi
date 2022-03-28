@@ -10,4 +10,5 @@ echo "GatewayInterface wlan0
 GatewayAddress 192.168.4.1" >> /etc/nodogsplash/nodogsplash.conf
 cp /home/pi/src/nodogsplash/debian/nodogsplash.service /lib/systemd/system/
 systemctl enable nodogsplash.service
+systemctl start nodogsplash.service
 # todo correct conf, this wrong?

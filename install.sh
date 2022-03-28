@@ -14,6 +14,7 @@ LC_ALL=en_GB.UTF-8" >> /etc/default/locale' # fixes annoying locale warnings
 git clone https://github.com/mmalmi/FreedomPi.git
 cd FreedomPi
 sudo ./install_nginx.sh
+sudo ./install_files.sh
 ./install_gunjs.sh
 sudo ./install_radio.sh
 sudo ./install_hotspot.sh

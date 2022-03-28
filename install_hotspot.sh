@@ -60,13 +60,9 @@ apt-get install hostapd -y
 systemctl unmask hostapd
 systemctl enable hostapd
 
-echo "Configuring Hostapd !"
-echo "Choose the hostname for your new network (1-32 char, try to privilege ASCII chars) :"
-read ssid
-
 echo "interface=wlan0
 driver=nl80211
-ssid=$ssid
+ssid=\"Freedom Pi\"
 hw_mode=g
 channel=7
 wmm_enabled=0
