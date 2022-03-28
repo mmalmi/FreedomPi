@@ -4,7 +4,7 @@
 * Offline-first community portal that opens when you connect to the wifi
   * Chat that synchronizes over the sneaker network when people move between Freedom Pi hotspots
   * Filesharing tools
-  * Offline databank. English mini version of Wikipedia is included by default. 
+  * Offline library. English mini version of Wikipedia is included by default. 
 * Optionally shares internet access over Tor. Tor prevents internet censorship and protects open wifi providers from liability.
 * Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter), web UI TBD)
   * No additional hardware required: it uses Raspberry Pi's spread spectrum clock signal generator to emit radio frequencies
@@ -33,7 +33,7 @@ ssh-keygen -R raspberrypi.local
 ssh pi@raspberrypi.local
 ```
 5. Change the default password using the `passwd` command
-6. Set the WiFi country in raspi-config's Localisation Options: `sudo raspi-config`. Reboot is not necessary.
+6. Set the WiFi country in raspi-config's Localisation Options: `sudo raspi-config`. Optionally, change the hostname. Reboot is not necessary.
 7. Download the install script & run. Optionally comment out unwanted components. Enter your desired wifi name (ssid) when prompted.
 ```
 wget https://raw.githubusercontent.com/mmalmi/FreedomPi/master/install.sh -O install.sh
@@ -41,7 +41,7 @@ chmod +x ./install.sh
 ./install.sh
 ```
 
-## Adding datasets to library
+## Adding datasets to the offline library
 1. Download .zim files from `https://download.kiwix.org/zim/` or other sources into `/home/pi/FreedomPi/public/files/kiwix`
 2. Run
 ```cd /home/pi/FreedomPi/public/files/kiwix
