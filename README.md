@@ -34,7 +34,7 @@ ssh pi@raspberrypi.local
 ```
 5. Change the default password using the `passwd` command
 6. Set the WiFi country in raspi-config's Localisation Options: `sudo raspi-config`. Optionally, change the hostname. Reboot is not necessary.
-7. Download the install script & run. Optionally comment out unwanted components. Enter your desired wifi name (ssid) when prompted.
+7. Download the install script & run. Optionally comment out unwanted components. 
 ```
 wget https://raw.githubusercontent.com/mmalmi/FreedomPi/master/install.sh -O install.sh
 chmod +x ./install.sh
