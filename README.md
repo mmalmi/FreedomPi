@@ -21,7 +21,7 @@ Requirements: microSD card, microSD reader, Raspberry Pi, power supply or USB ca
 3. In Raspberry Pi Imager: Choose OS -> Use custom -> Select the downloaded image.
 4. Optional: if you want to manage the Pi over SSH, add an empty file named "ssh" onto the root of the SD card. Remember to change the default password as soon as possible.
 5. Insert the SD card into the Pi and power it on.
-6. An open wifi network named Freedom Pi should appear soon. Connect to the network and open [freedom.pi](http://freedom.pi)
+6. An open wifi network named  "Open freedom.pi" should appear soon. Connect to the network and open [freedom.pi](http://freedom.pi)
 
 ### Custom installation
 1. Install Raspberry Pi OS Lite onto a microSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
@@ -40,14 +40,15 @@ wget https://raw.githubusercontent.com/mmalmi/FreedomPi/master/install.sh -O ins
 chmod +x ./install.sh
 ./install.sh
 ```
-8. An open wifi named Freedom Pi should appear. Connect to the network and open [freedom.pi](http://freedom.pi).
+8. An open wifi named "Open freedom.pi" should appear. Connect to the network and open [freedom.pi](http://freedom.pi).
 
-## Adding datasets to the offline library
+## Administration
+[Instructions](./public/files/freedom_pi_docs/administration.md)
+
+### Adding datasets to the offline library
 1. Download .zim files from `https://download.kiwix.org/zim/` or other sources into `/home/pi/FreedomPi/public/files/kiwix`
 2. Run
 ```cd /home/pi/FreedomPi/public/files/kiwix
 kiwix-manage library.xml add *.zim`
 sudo service kiwix restart```
 
-## TODO
-- [NDS](https://github.com/nodogsplash/nodogsplash) captive portal that opens when you connect to the wifi. Problems: 1. Inteferes with out current tor iptables nat routing. 2. Doesn't work offline without additional dnsmasq config ([Github issue](https://github.com/nodogsplash/nodogsplash/issues/154)).
