@@ -41,7 +41,8 @@ service dhcpcd restart
 echo "Configuring dnsmasq..."
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
 echo "interface=wlan0      # Use the require wireless interface - usually wlan0
-dhcp-range=192.168.4.2,192.168.4.20,255.255.255.0,24h" > /etc/dnsmasq.conf
+dhcp-range=192.168.4.2,192.168.4.20,255.255.255.0,24h
+address=/freedom.pi/192.168.4.1" > /etc/dnsmasq.conf
 
 echo "Enabling dnsmasq and restart..."
 systemctl unmask dnsmasq

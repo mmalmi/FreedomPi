@@ -1,3 +1,4 @@
+# TODO: nodogsplash iptables config apparently not working with our tor config
 # https://nodogsplash.readthedocs.io/en/latest/customize.html#the-configuration-file
 mkdir /home/pi/src
 cd /home/pi/src
