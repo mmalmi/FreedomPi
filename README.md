@@ -2,11 +2,12 @@
 # Freedom Pi
 * Raspberry Pi wifi access point
 * Offline-first community portal at freedompi.local
+  * Reminded by the wifi name "Open freedompi.local"
   * Chat that synchronizes over the sneaker network when people move between Freedom Pi hotspots
-  * Filesharing tools
+  * Files directory
   * Offline library. English mini version of Wikipedia is included by default. 
-* Optionally shares internet access over Tor. Tor prevents internet censorship and protects open wifi providers from liability.
-* Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter), web UI TBD)
+* If connected to the Internet via ethernet, external wifi adapter or 4G modem, the connection is shared and routed over Tor. Tor prevents some internet censorship and protects open wifi providers from liability.
+* Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter))
   * No additional hardware required: it uses Raspberry Pi's spread spectrum clock signal generator to emit radio frequencies
   * Check your local regulations regarding transmission power and allowed frequencies. Low-power transmission (phone-to-car-radio transmitters) is usually allowed. For more power, you can add a wire antenna to the GPIO 4 port.
 * $30 minimal setup: Raspberry Pi Zero W, microSD card and a power supply
@@ -42,13 +43,7 @@ chmod +x ./install.sh
 ```
 8. An open wifi named "Open freedom.pi" should appear. Connect to the network and open [freedom.pi](http://freedom.pi).
 
-## Administration
-[Instructions](./public/files/freedom_pi_docs/administration.md)
-
-### Adding datasets to the offline library
-1. Download .zim files from `https://download.kiwix.org/zim/` or other sources into `/home/pi/FreedomPi/public/files/kiwix`
-2. Run
-```cd /home/pi/FreedomPi/public/files/kiwix
-kiwix-manage library.xml add *.zim`
-sudo service kiwix restart```
+## Documentation
+- [Admin access](./public/files/freedom_pi_docs/admin_access.md)
+- [Other docs](./public/files/freedom_pi_docs/)
 

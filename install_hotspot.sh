@@ -42,7 +42,7 @@ echo "Configuring dnsmasq..."
 mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
 echo "interface=wlan0      # Use the require wireless interface - usually wlan0
 dhcp-range=192.168.4.2,192.168.4.20,255.255.255.0,24h
-address=/freedom.pi/192.168.4.1" > /etc/dnsmasq.conf
+address=/freedompi.local/192.168.4.1" > /etc/dnsmasq.conf
 
 echo "Enabling dnsmasq and restart..."
 systemctl unmask dnsmasq
@@ -63,7 +63,7 @@ systemctl enable hostapd
 
 echo "interface=wlan0
 driver=nl80211
-ssid=\"Open freedom.pi\"
+ssid=\"Open freedompi.local\"
 hw_mode=g
 channel=7
 wmm_enabled=0

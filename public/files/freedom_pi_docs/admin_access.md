@@ -1,4 +1,4 @@
-# Administration
+# Admin access
 ## SSH
 1. Add an empty file named "ssh" onto the root of the Raspberry Pi's SD card.
 2. Connect to the Pi's network over the "Freedom Pi" wifi or ethernet.
