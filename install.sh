@@ -2,6 +2,8 @@
 # If you don't want to install a component, comment out the line
 
 cd ~
+sudo raspi-config nonint do_hostname freedompi
+sudo raspi-config nonint do_wifi_country GB
 sudo apt update -y
 sudo apt upgrade -y
 sudo apt install git unattended-upgrades -y # automatic software update

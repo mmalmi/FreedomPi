@@ -34,19 +34,19 @@ ssh-keygen -R raspberrypi.local
 ssh pi@raspberrypi.local
 ```
 5. Set a secure password using the `passwd` command
-6. Run `sudo raspi-config`. Set the WiFi country in raspi-config's Localisation Options. Change the hostname to `freedompi` and reboot.
-7. SSH into the Pi using the new hostname:
- ```
-ssh-keygen -R freedompi.local
-ssh pi@freedompi.local
-```
-8. Download the install script & run. Optionally comment out unwanted components. 
+6. Download the install script & run. Optionally comment out unwanted components in `install.sh`, or change the hostname (default: freedompi) or wifi country (default: GB) 
 ```
 wget https://raw.githubusercontent.com/mmalmi/FreedomPi/master/install.sh -O install.sh
 chmod +x ./install.sh
 ./install.sh
 ```
-9. An open wifi named "Open freedompi.local" should appear. Connect to the network and open [freedom.pi](http://freedom.pi).
+7. An open wifi named "Open freedompi.local" should appear. Connect to the network and open [freedom.pi](http://freedom.pi).
+
+Note that the script changed the hostname. For SSH:
+```
+ssh-keygen -R freedompi.local
+ssh pi@freedompi.local
+```
 
 ## Documentation
 - [Admin access](./public/files/freedom_pi_docs/admin_access.md)
