@@ -58,17 +58,8 @@ echo "$(tput setaf 6)Flushing old IP tables...$(tput sgr0)"
 iptables -F
 iptables -t nat -F
 
-echo "$(tput setaf 6)Establishing $(tput bold)ssh$(tput sgr0 ; tput setaf 6) exception on port 22...$(tput sgr0)"
-iptables -t nat -A PREROUTING -i wlan0 -p tcp --dport 22 -j REDIRECT --to-ports 22
-
-echo "$(tput setaf 6)Rerouting DNS traffic...$(tput sgr0)"
-iptables -t nat -A PREROUTING -i wlan0 -p udp --dport 53 -j REDIRECT --to-ports 53
-
-echo "$(tput setaf 6)Rerouting TCP traffic...$(tput sgr0)"
-iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports 9040
-
-echo "$(tput setaf 6)Saving IP tables...$(tput sgr0)"
-sh -c "iptables-save > /etc/iptables.ipv4.nat"
+echo "$(tput setaf 6)Installing new IP tables$(tput sgr0)"
+cp /home/pi/FreedomPi/config/iptables.ipv4.nat /etc/iptables.ipv4.nat
 
 echo "$(tput setaf 6)Setting up logging in /var/log/tor/notices.log...$(tput sgr0)"
 touch /var/log/tor/notices.log
