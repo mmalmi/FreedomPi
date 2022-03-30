@@ -3,6 +3,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# TODO: install 16 if armv6 (pi zero), otherwise stable without mirror
 NVM_NODEJS_ORG_MIRROR=https://unofficial-builds.nodejs.org/download/release nvm install 16
 NVM_NODEJS_ORG_MIRROR=https://unofficial-builds.nodejs.org/download/release nvm install stable
 node_path=$(which node)
