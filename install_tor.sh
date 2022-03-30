@@ -81,7 +81,7 @@ service tor start
 echo "$(tput setaf 6)Setting Tor to start at boot...$(tput sgr0)"
 update-rc.d tor enable
 
-# todo: tor@default.service needs RestartSec=1 or better start sequence. "can't bind to address"
+sed -i '/^\[Service\]$/a RestartSec=1' /lib/systemd/system/tor@default.service
 
 echo "$(tput setaf 6)Setup complete!
 

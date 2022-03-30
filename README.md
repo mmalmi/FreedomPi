@@ -25,16 +25,16 @@ Requirements: microSD card, microSD reader, Raspberry Pi, power supply or USB ca
 6. An open wifi network named  "Open freedom.pi" should appear soon. Connect to the network and open [freedom.pi](http://freedom.pi)
 
 ### Custom installation
-1. Install Raspberry Pi OS Lite onto a microSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
-2. Enable SSH by adding an empty file named "ssh" onto the SD card root directory. If you can't connect to the Pi over ethernet, see instructions for [USB](https://desertbot.io/blog/ssh-into-pi-zero-over-usb) or [wifi](https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi) setup. For USB, also check out Internet connection sharing ([Macos](https://www.thepolyglotdeveloper.com/2019/07/share-internet-between-macos-raspberry-pi-zero-over-usb/), [Ubuntu](https://help.ubuntu.com/community/Internet/ConnectionSharing) (replace eth0 -> usb0), [Windows](https://www.circuitbasics.com/raspberry-pi-zero-ethernet-gadget/)).
+1. Install Raspberry Pi OS Lite onto a microSD card using [Raspberry Pi Imager](https://www.raspberrypi.com/software/). The installation is tested to work with the Debian 11 (bullseye) based Raspberry Pi OS Lite.
+2. Enable SSH by adding an empty file named "ssh" onto the SD card root directory. Connect the Pi to your network via ethernet or see instructions for [USB](https://desertbot.io/blog/ssh-into-pi-zero-over-usb) or [wifi](https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-headless-raspberry-pi) setup. For USB, also check out Internet connection sharing ([Macos](https://www.thepolyglotdeveloper.com/2019/07/share-internet-between-macos-raspberry-pi-zero-over-usb/), [Ubuntu](https://help.ubuntu.com/community/Internet/ConnectionSharing) (replace eth0 -> usb0), [Windows](https://www.circuitbasics.com/raspberry-pi-zero-ethernet-gadget/)).
 3. Insert the SD card into the Pi and power it on.
 4. SSH into the Pi with the default password `raspberry`
 ```
 ssh-keygen -R raspberrypi.local
 ssh pi@raspberrypi.local
 ```
-5. Change the default password using the `passwd` command
-6. Set the WiFi country in raspi-config's Localisation Options: `sudo raspi-config`. Optionally, change the hostname. Reboot is not necessary.
+5. Set a secure password using the `passwd` command
+6. Run `sudo raspi-config`. Set the WiFi country in raspi-config's Localisation Options. Change the hostname to `freedompi` and reboot.
 7. Download the install script & run. Optionally comment out unwanted components. 
 ```
 wget https://raw.githubusercontent.com/mmalmi/FreedomPi/master/install.sh -O install.sh

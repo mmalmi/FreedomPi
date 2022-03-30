@@ -63,7 +63,7 @@ systemctl enable hostapd
 
 echo "interface=wlan0
 driver=nl80211
-ssid=\"Open freedompi.local\"
+ssid=Open freedompi.local
 hw_mode=g
 channel=7
 wmm_enabled=0

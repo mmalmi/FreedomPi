@@ -4,12 +4,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 NVM_NODEJS_ORG_MIRROR=https://unofficial-builds.nodejs.org/download/release nvm install 16
+NVM_NODEJS_ORG_MIRROR=https://unofficial-builds.nodejs.org/download/release nvm install stable
 node_path=$(which node)
 
 mkdir /home/pi/src
 cd /home/pi/src
 git clone https://github.com/amark/gun.git gun-js --depth 1
 sudo chown -R pi:www-data gun-js
+chmod g+w gun-js
 cd gun-js
 npm install
 

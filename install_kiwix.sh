@@ -2,11 +2,10 @@
 # If you don't want to download a component, comment out the line
 
 # Kiwix
-sudo apt install kiwix-tools
+sudo apt install kiwix-tools -y
 mkdir /home/pi/FreedomPi/public/files/kiwix
 cd /home/pi/FreedomPi/public/files/kiwix
 wget https://download.kiwix.org/zim/wikipedia/wikipedia_en_top_mini_2022-01.zim
-wget https://download.kiwix.org/zim/wikipedia/wikipedia_en_medicine_maxi_2022-03.zim
 kiwix-manage library.xml add *.zim
 
 sudo sh -c "echo \"[Unit]
@@ -24,11 +23,3 @@ WantedBy=multi-user.target\" > /lib/systemd/system/kiwix.service"
 sudo systemctl enable kiwix
 sudo systemctl start kiwix
 
-# Iris
-mkdir /home/pi/FreedomPi/public/files/iris
-cd /home/pi/FreedomPi/public/files/iris
-curl -s https://api.github.com/repos/irislib/iris-electron/releases/latest \
-| grep "browser_download_url" \
-| cut -d : -f 2,3 \
-| tr -d \" \
-| wget -i -
