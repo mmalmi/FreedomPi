@@ -1,4 +1,3 @@
-![WIP](wip.gif "work in progress")
 # Freedom Pi
 * Raspberry Pi wifi access point
 * Offline-first community portal at freedompi.local
@@ -14,7 +13,7 @@
 
 ## Installation
 
-Requirements: microSD card, microSD reader, Raspberry Pi, power supply or USB cable
+Requirements: microSD card, microSD reader, Raspberry Pi, power supply or USB cable. Tested to work on RPi4 and RPi Zero W.
 
 ### Using a pre-built image
 1. Download a pre-built Freedom Pi image from [releases](https://github.com/mmalmi/FreedomPi/releases) (upcoming)
