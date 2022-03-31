@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir /home/pi/src
 cd /home/pi/src
 git clone https://github.com/markondej/fm_transmitter.git --depth 1
