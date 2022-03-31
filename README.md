@@ -11,6 +11,8 @@
   * Check your local regulations regarding transmission power and allowed frequencies. Low-power transmission (phone-to-car-radio transmitters) is usually allowed. For more power, you can add a wire antenna to the GPIO 4 port.
 * $30 minimal setup: Raspberry Pi Zero W, microSD card and a power supply
 
+![Community portal screenshot](./screenshot.png)
+
 ## Installation
 
 Requirements: microSD card, microSD reader, Raspberry Pi, power supply or USB cable. Tested to work on RPi4 and RPi Zero W.
