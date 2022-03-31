@@ -1,4 +1,4 @@
-<img src="./rpi_zero_w.jpg" width="35%"> <img src="./screenshot.png" width="55%">
+<img src="./rpi_zero_w.jpg" alt="$30 minimal setup" width="35%"> <img src="./screenshot.png" alt="Community portal" width="55%">
 
 # Freedom Pi
 * Raspberry Pi wifi access point
