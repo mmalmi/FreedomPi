@@ -4,8 +4,7 @@
 
 # Freedom Pi
 * Raspberry Pi wifi access point
-* No configuration required: just insert the SD card and power on your Pi
-* Offline-first community portal at freedompi.local
+* Offline community portal at freedompi.local
   * Reminded by the wifi name "Open freedompi.local"
   * Chat that synchronizes over the sneaker 👟👟 network when people move between Freedom Pi hotspots
   * Files directory
@@ -14,10 +13,15 @@
 * Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter))
   * No additional hardware required: it uses Raspberry Pi's spread spectrum clock signal generator to emit radio frequencies
   * Check your local regulations regarding transmission power and allowed frequencies. Low-power transmission (phone-to-car-radio transmitters) is usually allowed. For more power, you can add a wire antenna to the GPIO 4 port.
+* No configuration required: just insert the SD card and power on your Pi
 
 ## Installation
 
-Requirements: microSD card, microSD reader, Raspberry Pi, power supply or USB cable. Tested to work on RPi4 and RPi Zero W.
+### Requirements
+* microSD card
+* microSD reader
+* Raspberry Pi. (Tested on RPi Zero W and RPi 4, but any version should work.)
+* power supply or USB cable
 
 ### Using a pre-built image
 1. Download a pre-built Freedom Pi image from [releases](https://github.com/mmalmi/FreedomPi/releases) (upcoming)
