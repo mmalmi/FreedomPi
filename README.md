@@ -1,5 +1,7 @@
 <img src="./rpi_zero_w.jpg" alt="$30 minimal setup" width="35%"> <img src="./screenshot.png" alt="Community portal" width="55%">
 
+*$30 minimal setup: Raspberry Pi Zero W, microSD card and a power supply*
+
 # Freedom Pi
 * Raspberry Pi wifi access point
 * No configuration required: just insert the SD card and power on your Pi
@@ -12,7 +14,6 @@
 * Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter))
   * No additional hardware required: it uses Raspberry Pi's spread spectrum clock signal generator to emit radio frequencies
   * Check your local regulations regarding transmission power and allowed frequencies. Low-power transmission (phone-to-car-radio transmitters) is usually allowed. For more power, you can add a wire antenna to the GPIO 4 port.
-* $30 minimal setup: Raspberry Pi Zero W, microSD card and a power supply
 
 ## Installation
 
