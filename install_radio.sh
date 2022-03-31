@@ -3,9 +3,15 @@ cd /home/pi/src
 git clone https://github.com/markondej/fm_transmitter.git --depth 1
 
 apt install sox libsox-fmt-mp3 -y
-# on rpi4: https://github.com/markondej/fm_transmitter#raspberry-pi-4
 cd /home/pi/src/fm_transmitter
-make
+
+# rpi4: https://github.com/markondej/fm_transmitter#raspberry-pi-4
+if [[ $(cat /proc/cpuinfo) == *"Raspberry Pi 4"* ]]; then
+	make GPIO21=1
+	echo "performance"| sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+else
+	make
+fi
 
 echo "[Unit]
 Description=FM radio broadcast
@@ -19,7 +25,6 @@ Restart=on-failure
 [Install]
 WantedBy=multi-user.target" > /lib/systemd/system/fm_radio.service
 
-cp /home/pi/src/fm_transmitter/acoustic_guitar_duet.wav /home/pi/FreedomPi/radio/audio/
 systemctl enable fm_radio
 systemctl start fm_radio
 
