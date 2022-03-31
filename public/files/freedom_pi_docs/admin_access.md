@@ -1,7 +1,7 @@
 # Admin access
 ## SSH
 1. Add an empty file named "ssh" onto the root of the Raspberry Pi's SD card.
-2. Connect to the Pi's network over the "Freedom Pi" wifi or ethernet.
+2. Connect to the Pi's network over the "Open freedompi.local" wifi or ethernet.
 3. Connect to the Pi over SSH: `ssh pi@freedompi.local`
 4. The default password is `raspberry`
 5. Change the default password using the `passwd` command
