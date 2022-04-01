@@ -1,4 +1,4 @@
-<img src="./rpi_zero_w.jpg" alt="$30 minimal setup" width="35%"> <img src="./screenshot.png" alt="Community portal" width="55%">
+<img src="./rpi_zero_w.jpg" alt="$30 minimal setup" width="33%"> <img src="./screenshot.png" alt="Community portal" width="55%">
 
 *$30 minimal setup: Raspberry Pi Zero W, microSD card and a power supply*
 
