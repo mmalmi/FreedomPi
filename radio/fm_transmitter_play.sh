@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 10 # give it some time to boot
 shopt -s nullglob
 while true
 do
