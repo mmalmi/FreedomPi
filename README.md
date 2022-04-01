@@ -7,7 +7,7 @@
 * Offline community portal at freedompi.local
   * Reminded by the wifi name "Open freedompi.local"
   * Chat that synchronizes over the sneaker 👟👟 network when people move between Freedom Pi hotspots
-  * Files directory
+  * Filesharing directory
   * Offline library. English mini version of Wikipedia is included by default. 
 * If connected to the Internet via ethernet, external wifi adapter or 4G modem, the connection is shared and routed over Tor. Tor prevents some internet censorship and protects open wifi providers from liability.
 * Tools for FM radio broadcasting ([rpitx](https://github.com/F5OEO/rpitx), [fm_transmitter](https://github.com/markondej/fm_transmitter))
