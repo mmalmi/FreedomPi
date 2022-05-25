@@ -6,24 +6,24 @@ source $HOME/.cargo/env
 
 mkdir /home/pi/src
 cd /home/pi/src
-git clone https://github.com/mmalmi/gun-rs.git --depth 1
-# sudo chown -R pi:www-data gun-rs
-cd gun-rs
+git clone https://github.com/mmalmi/rod.git --depth 1
+# sudo chown -R pi:www-data rod
+cd rod
 cargo build --release # this takes many hours on slower devices like RPi Zero W - pre-built images needed
 
 sudo su -c "echo \"[Unit]
-Description=Gun-rs relay
+Description=Rod relay
 After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/pi/src/gun-rs
-ExecStart=/home/pi/src/gun-rs/target/release/gundb start
+WorkingDirectory=/home/pi/src/rod
+ExecStart=/home/pi/src/rod/target/release/rod start
 Restart=on-failure
 User=www-data
 
 [Install]
-WantedBy=multi-user.target\" > /lib/systemd/system/gunrs.service"
+WantedBy=multi-user.target\" > /lib/systemd/system/rod.service"
 
-sudo systemctl enable gunrs
-sudo systemctl start gunrs
+sudo systemctl enable rod
+sudo systemctl start rod
